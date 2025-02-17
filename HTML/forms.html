@@ -24,7 +24,7 @@
         <label for="female">Female</label>
       </div>
       <div>
-        <input type="checkbox" name="subscribe" id="subscribe" />
+        <input type="checkbox" name="subscribe" id="subscribe" required />
         <label for="subscribe">Subscribe to my Channel</label>
       </div>
       <div>
@@ -43,6 +43,22 @@
           <option value="banana">Banana</option>
           <option value="cherry">Cherry</option>
         </select>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+          required
+        />
+      </div>
+      <div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
+      </div>
+      <div>
+        <button type="submit">Submit</button>
       </div>
     </form>
   </body>
