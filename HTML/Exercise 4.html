@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration Form</title>
+  </head>
+  <body>
+    <form
+      action=""
+      method="post"
+      enctype="text/plain"
+      accept-charset="UTF-8"
+      autocomplete="off"
+    >
+      <h3>Event Registration</h3>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      /><br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email_id"
+        id="email"
+        placeholder="Enter your email address"
+        required
+      /><br /><br />
+      <label for="phone_number">Phone:</label>
+      <input
+        type="text"
+        id="phone_number"
+        name="phone_number"
+        placeholder="Enter your phone number"
+        required
+      /><br /><br />
+      <label for="occupation">Occupation:</label>
+      <select name="occupation" id="occupation">
+        <option value="student">Student</option>
+        <option value="employed">Employed</option>
+        <option value="self-employed">Self-Employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="other">Other</option></select
+      ><br /><br />
+      <label for="topics_of_interest">Topics of Interest:</label>
+      <input
+        type="checkbox"
+        id="HTML"
+        name="topics_of_interest"
+        value="technology"
+      />
+      <label for="HTML">HTML</label>
+      <input
+        type="checkbox"
+        id="CSS"
+        name="topics_of_interest"
+        value="business"
+      />
+      <label for="CSS">CSS</label>
+      <input
+        type="checkbox"
+        id="JavaScript"
+        name="topics_of_interest"
+        value="design"
+      />
+      <label for="JavaScript">JavaScript</label><br /><br />
+      <label for="comments">Additional Comments:</label><br />
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="50"
+        placeholder="Enter any additional information here..."
+      ></textarea
+      ><br /><br />
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>

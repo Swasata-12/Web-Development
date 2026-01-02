@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Info</title>
+  </head>
+  <body>
+    <form
+      action=""
+      method="post"
+      enctype="text/plain"
+      accept-charset="UTF-8"
+      autocomplete="off"
+    >
+      <h2>Fill Your Personal Information Here</h2>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="full_name">Full Name:</label>
+        <input
+          type="text"
+          id="full_name"
+          name="full_name"
+          placeholder="Enter your full name"
+          required
+        /><br><br>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email_id"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        /><br><br>
+        <label for="phone_number">Phone:</label>
+        <input
+          type="text"
+          name="phone_number"
+          id="phone_number"
+          placeholder="Enter your phone number"
+          required
+        /><br><br>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" name="DOB" id="DOB" required /><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label><br><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="">--Choose your Country--</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+          <option value="Canada">Canada</option>
+        </select><br><br>
+      </fieldset><br>
+      <fieldset>
+        <legend>Address</legend>
+        <label for="address">Street:</label>
+        <input
+          type="text"
+          id="address"
+          name="street"
+          placeholder="Enter your street address"
+          required
+        /><br><br>
+        <label for="city">City:</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Enter your city"
+          required
+        /><br><br>
+        <label for="state">State/Province:</label>
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="Enter your state/province"
+          required
+        /><br><br>
+        <label for="zip_code">ZIP Code:</label>
+        <input
+          type="text"
+          id="zip_code"
+          name="zip_code"
+          placeholder="Enter your ZIP code"
+          required
+        /><br><br>
+      </fieldset><br>
+      <fieldset>
+        <legend>Other Information</legend>
+        <label for="comments">Comments:</label><br />
+        <textarea
+          id="comments"
+          name="comments"
+          rows="3"
+          cols="30"
+          placeholder="Enter any additional comments"
+        ></textarea
+        ><br />
+        <input type="checkbox" name="T&C" id="terms_and_conditions" required />
+        <label for="terms_and_conditions"
+          >I agree to the Terms and Conditions</label
+        ><br />
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

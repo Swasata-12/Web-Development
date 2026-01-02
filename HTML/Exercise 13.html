@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://png.pngtree.com/png-vector/20210804/ourmid/pngtree-letter-s-logo-png-vector-png-image_3779620.jpg"
+      type="image/x-icon"
+    />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <form
+      action=""
+      method="post"
+      enctype="text/plain"
+      autocomplete="off"
+      accept-charset="UTF-8"
+    >
+      <h1>Website Feedback Form</h1>
+      <label for="name">Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+      <label for="email">Email:</label><br />
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+      /><br /><br />
+      How would you rate our website?<br />
+      <input type="radio" name="ratings" id="excellent" />
+      <label for="excellent">Excellent</label><br />
+      <input type="radio" name="ratings" id="good" />
+      <label for="good">Good</label><br />
+      <input type="radio" name="ratings" id="poor" />
+      <label for="poor">Poor</label><br /><br />
+      Which features do you like the most?<br />
+      <input type="checkbox" name="features" id="design" />
+      <label for="design">Design</label><br />
+      <input type="checkbox" name="features" id="content" />
+      <label for="content">Content</label><br />
+      <input type="checkbox" name="features" id="navigation" />
+      <label for="navigation">Navigation</label><br /><br />
+      What would you like to see improved?<br />
+      <select name="improvment" id="improvment">
+        <option value="design">Design</option>
+        <option value="content">Content</option>
+        <option value="navigation">Navigation</option>
+        <option value="performance">Performance</option></select
+      ><br /><br />
+      Additional Comments:<br />
+      <textarea
+        name="comments"
+        id="comments"
+        cols="30"
+        rows="5"
+        placeholder="Any Comments here"
+      ></textarea
+      ><br /><br />
+      <input type="submit" value="Submit Feedback" />
+    </form>
+  </body>
+</html>

@@ -6,40 +6,111 @@
     <title>TravelStud.com-Book your travel to Bali</title>
   </head>
   <body>
-    <form action="post">
+    <form
+      action=""
+      method="post"
+      enctype="text/plain"
+      autocomplete="off"
+      accept-charset="UTF-8"
+    >
       <h3>Trip to Bali</h3>
       <div>
         <label for="name">Enter Name:</label>
-        <input type="text" name="" id="name" placeholder="Enter your name" />
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
       </div>
+      <br />
       <div>
         <label for="age">Age:</label>
-        <input type="number" name="" id="age" placeholder="Enter your age" />
+        <input
+          type="number"
+          name="userage"
+          id="age"
+          placeholder="Enter your age"
+          required
+        />
       </div>
+      <br />
       <div>
         <label for="phno">Phone No.:</label>
         <input
           type="number"
-          name=""
+          name="userphno"
           id="phno"
           placeholder="Enter phone number"
+          required
         />
       </div>
+      <br />
       <div>
         <label for="email">Enter your Email:</label>
-        <input type="email" name="" id="email" placeholder="enter Email" />
+        <input
+          type="email"
+          name="useremailid"
+          id="email"
+          placeholder="enter Email"
+          required
+        />
       </div>
+      <br />
       <div>
-        <label for="add">Address:</label>
+        <label for="address">Address:</label>
         <textarea
           name="Address"
-          id="add"
+          id="address"
           placeholder="Enter your address"
+          required
         ></textarea>
       </div>
+      <br />
       <div>
-        <button type="submit">Submit</button>
+        <!-- <button type="submit">Submit</button> -->
+        <input type="reset" value="Clear Form" />
+        <input type="submit" value="Book Slot" />
       </div>
     </form>
+    <hr />
+
+    <!-- Registration Form for Booking -->
+    <form
+      action=""
+      method="post"
+      enctype="text/plain"
+      autocomplete="off"
+      accept-charset="UTF-8"
+    >
+      <h3>Registration Form</h3>
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        placeholder="First Name"
+      />
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        placeholder="Last Name"
+      /><br /><br>
+      <label for="gender">Please select gender</label>
+      <select name="gender" id="gender">
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option></select
+      ><br /><br>
+      Do you agree to the terms and conditions?
+      <input type="checkbox" name="T&C_agree" id="T&C_agree" />
+      <label for="T&C_agree">Yes, I agree</label><br /><br>
+      <input type="submit" value="Register" />
+    </form>
+    <footer>
+      <p>© TravelStud.com | All rights reserved</p>
+    </footer>
   </body>
 </html>

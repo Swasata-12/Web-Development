@@ -7,7 +7,13 @@
   </head>
   <body>
     <h2>Form to apply for Course</h2>
-    <form action="post">
+    <form
+      action=""
+      method="post"
+      enctype="text/plain"
+      autocomplete="off"
+      accept-charset="UTF-8"
+    >
       <div>
         <label for="username">Username</label>
         <input
@@ -15,18 +21,20 @@
           id="username"
           name="username"
           placeholder="Enter your username"
+          required
         />
-      </div>
+      </div><br>
       <div>
+        Gender:
         <input type="radio" name="gender" id="male" value="male" />
         <label for="male">Male</label>
         <input type="radio" name="gender" id="female" value="female" />
         <label for="female">Female</label>
-      </div>
+      </div><br>
       <div>
         <input type="checkbox" name="subscribe" id="subscribe" required />
         <label for="subscribe">Subscribe to my Channel</label>
-      </div>
+      </div><br>
       <div>
         <label for="comment">Enter your comment</label>
         <br />
@@ -35,29 +43,30 @@
           id="comment"
           placeholder="Enter your comment here...."
         ></textarea>
-      </div>
+      </div><br>
       <div>
-        <label for="fruits">Choose your favourite fruit:</label><br />
+        <label for="fruits">Choose your favourite fruit:</label>
         <select name="fruits" id="fruits">
           <option value="apple">Apple</option>
           <option value="banana">Banana</option>
           <option value="cherry">Cherry</option>
         </select>
-      </div>
+      </div><br>
       <div>
-        <label for="password">Password</label>
+        <label for="password">Password:</label>
         <input
           type="password"
           id="password"
           placeholder="Enter Password"
           required
         />
-      </div>
+      </div><br>
       <div>
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" required />
-      </div>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dateofbirth" required />
+      </div><br>
       <div>
+        <input type="reset" value="Reset" />
         <button type="submit">Submit</button>
       </div>
     </form>
